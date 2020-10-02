@@ -1,0 +1,400 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+<!--[if IE 10]><html class="no-js ie10" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html class="no-js " lang="en" dir="ltr" data-date-format="non_us">
+ <!--<![endif]-->
+ <!-- Mirrored from jxbrowser.support.teamdev.com/support/solutions/articles/9000013069-lightweight-or-heavyweight by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 07:30:50 GMT -->
+ <!-- Added by HTTrack -->
+ <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <!-- /Added by HTTrack -->  
+  <!-- Title for the page --> 
+  <title> Lightweight or Heavyweight : JxBrowser </title> 
+  <!-- Meta information --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="description" content=""> 
+  <meta name="author" content=""> 
+  <meta property="og:title" content="Lightweight or Heavyweight"> 
+  <meta property="og:url" content="9000013069-lightweight-or-heavyweight.html"> 
+  <meta property="og:description" content=" Note:&nbsp;Advice in this article will only work for JxBrowser 6. See the corresponding article for JxBrowser 7 here.     JxBrowser supports two rendering modes: lightweight and heavyweight.     By default, heavyweight rendering mode is enabled, so wh..."> 
+  <meta property="og:image" content="../../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w8657.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS6FNSMY2WD6T3JNC%2F20200914%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200914T051635Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c116fc89026f5523d9ec125ce9dafc0a2e800b2dc097c81bf8121cfb61394164"> 
+  <meta property="og:site_name" content="TeamDev"> 
+  <meta property="og:type" content="article"> 
+  <meta name="twitter:title" content="Lightweight or Heavyweight"> 
+  <meta name="twitter:url" content="9000013069-lightweight-or-heavyweight.html"> 
+  <meta name="twitter:description" content=" Note:&nbsp;Advice in this article will only work for JxBrowser 6. See the corresponding article for JxBrowser 7 here.     JxBrowser supports two rendering modes: lightweight and heavyweight.     By default, heavyweight rendering mode is enabled, so wh..."> 
+  <meta name="twitter:image" content="../../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w8657.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS6FNSMY2WD6T3JNC%2F20200914%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200914T051635Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c116fc89026f5523d9ec125ce9dafc0a2e800b2dc097c81bf8121cfb61394164"> 
+  <meta name="twitter:card" content="summary"> 
+  <link rel="canonical" href="9000013069-lightweight-or-heavyweight.html"> 
+  <!-- Responsive setting --> 
+  <link rel="apple-touch-icon" href="../../../assets/touch/touch-icon-iphone.png"> 
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/touch/touch-icon-ipad.png"> 
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/touch/touch-icon-iphone-retina.png"> 
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/touch/touch-icon-ipad-retina.png"> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"> 
+  <!-- Adding meta tag for CSRF token --> 
+  <meta content="authenticity_token" name="csrf-param"> 
+  <meta content="wOYW4Yqcfe0ZgEXk30/wMZ6003cw+VUNPo/efHdDJlw=" name="csrf-token"> 
+  <!-- End meta tag for CSRF token --> 
+  <!-- Fav icon for portal --> 
+  <link rel="shortcut icon" href="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676283/fav_icon/hMZTQDr-Nvqs3SXSy3Qy_FxEdWez5OZhbA.ico"> 
+  <!-- Base stylesheet --> 
+  <link href="https://assets3.freshdesk.com/assets/cdn/portal_print-a389f1ef3e87261e7264e3e70416d704.css" media="print" rel="stylesheet" type="text/css"> 
+  <link href="https://assets3.freshdesk.com/assets/cdn/portal_utils-8853c5de5c2f34ad29f67725522bd688.css" media="screen" rel="stylesheet" type="text/css"> 
+  <!-- Theme stylesheet --> 
+  <link href="../../theme8d13.css?v=1591291426" media="screen" rel="stylesheet" type="text/css"> 
+  <!-- Google font url if present --> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700" rel="stylesheet" type="text/css"> 
+  <!-- Including default portal based script framework at the top --> 
+  <script src="https://assets10.freshdesk.com/assets/cdn/portal_head-43241a4601c08e2bd085bd76ec5fbfca.js" type="text/javascript"></script> 
+  <!-- Including syntexhighlighter for portal --> 
+  <script src="https://assets2.freshdesk.com/assets/cdn/prism-3f28a5413839eaa941ab06e1ae6a969c.js" type="text/javascript"></script> 
+  <!-- Portal specific integrations (Google analytics) --> 
+  <!-- google analytices starts here --> 
+  <script type="text/javascript">
+	var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-41668241-9']);
+	    _gaq.push(['_addDevId', '00P19']);
+	    _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script> 
+  <!-- google analytices ends here --> 
+  <!-- Access portal settings information via javascript --> 
+  <script type="text/javascript">     var portal = {"language":"en","name":"JxBrowser","contact_info":"","current_page_name":"article_view","current_tab":"solutions","vault_service":{"url":"https://vault-service.freshworks.com/data","max_try":2,"product_name":"fd"},"current_account_id":313551,"preferences":{"bg_color":"#ffffff","header_color":"#ffffff","help_center_color":"#ffffff","footer_color":"#777777","tab_color":"#ffffff","tab_hover_color":"#4c4b4b","btn_background":"#ffffff","btn_primary_background":"#6c6a6a","baseFont":"Helvetica Neue","textColor":"#333333","headingsFont":"Open Sans Condensed","headingsColor":"#333333","linkColor":"#049cdb","linkColorHover":"#036690","inputFocusRingColor":"#049cdb","nonResponsive":"false"},"image_placeholders":{"spacer":"https://assets10.freshdesk.com/assets/misc/spacer.gif","profile_thumb":"https://assets1.freshdesk.com/assets/misc/profile_blank_thumb-e1a34033b3073cb80f5becc0b644bfca.jpg","profile_medium":"https://assets4.freshdesk.com/assets/misc/profile_blank_medium-4ae2280a460eae3c870acb7a7545b7e5.jpg"},"falcon_portal_theme":false,"current_object_id":9000013069};     var attachment_size = 20;  </script> 
+ </head> 
+ <body> 
+  <div class="page clearfix"> 
+   <script>
+  jQuery(document).ready(function(){
+    
+    jQuery(".user-ava").click(function(){
+      jQuery(this).toggleClass("profile_active");
+    
+    });    
+    
+    jQuery("#notice:contains('You must be logged out to access this page')").css('display', 'none');
+    jQuery("#notice:contains('No user was found with that email address')").css('top', '-165px');
+   
+    
+    if(window.location.href == 'https://teamdev.freshdesk.com/support/home' || window.location.href == '../../home.html'){
+    	jQuery('.banner').addClass('home-page-banner');			
+        jQuery('#notice').addClass('home-notice');
+    } 
+    
+    if(window.location.href == 'http://teamdev.freshdesk.com/support/home' || window.location.href == '../../home.html'){
+    	jQuery('.banner').addClass('home-page-banner');			
+        jQuery('#notice').addClass('home-notice');
+    }  
+    
+    
+    
+  });
+</script> 
+   <header class="banner"> 
+    <div class="banner-wrapper center-holder"> 
+     <div class="banner-title"> 
+      <a href="https://teamdev.com/jxbrowser" class="portal-logo"><span class="portal-img"><i></i> <img src="../../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w.png" alt="Logo" onerror="default_image_error(this)" data-type="logo"> </span></a> 
+      <h1 class="ellipsis heading"><a class="target-blank" href="https://www.teamdev.com/jxbrowser" target="_blank">JxBrowser</a></h1> 
+     </div> 
+     <!-- <div class="welcome">Welcome <b></b> </div>  <b><a href="/support/login"><b>Login</b></a></b>--> 
+     <a data-toggle-dom="#header-tabs" href="#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+     <nav class="banner-nav mobileLogin"> 
+      <ul class="nav-link" id="header-tabs"> 
+       <li><a href="../../home.html">Home</a></li> 
+       <li> <a href="../9000050171.html">Getting Started</a></li> 
+       <li><a href="../../solutions.html">Documentation</a></li> 
+       <li><a class="target-blank" href="http://stackoverflow.com/questions/tagged/jxbrowser">Questions</a></li> 
+       <li><a href="../../discussions/forums/9000110576.html">Release Notes</a></li> 
+       <li class="btn-item"><a class="btn btn-log" href="https://jxbrowser.support.teamdev.com/support/login">Sign in</a></li> 
+      </ul> 
+     </nav> 
+    </div> 
+    <!-- Search and page links for the page --> 
+    <section class="help-center rounded-6"> 
+     <div class="hc-search"> 
+      <div class="hc-search-c"> 
+       <!-- <h2 class="heading hide-in-mobile">How can we help you today?</h2> --> 
+       <h2 class="heading hide-in-mobile"> Welcome to JxBrowser Help Center</h2> 
+       <form class="hc-search-form print--remove" autocomplete="off" action="https://jxbrowser.support.teamdev.com/support/search/solutions" id="hc-search-form" data-csrf-ignore="true"> 
+        <div class="hc-search-input"> 
+         <label for="support-search-input" class="hide">Enter your search term here...</label> 
+         <input placeholder="Enter your search term here..." type="text" name="term" class="special" value="" rel="page-search" data-max-matches="10" id="support-search-input"> 
+        </div> 
+        <div class="hc-search-button"> 
+         <button class="btn btn-primary" type="submit" autocomplete="off"> <i class="mobile-icon-search hide-tablet"></i> <span class="hide-in-mobile"> Search </span> </button> 
+        </div> 
+       </form> 
+      </div> 
+     </div> 
+     <!--<div class="hc-nav ">				
+ <nav>  <div class="hide-in-mobile"><a href=/support/login>Login</a> to submit a new ticket</div>   <div>
+              <a href="/support/tickets" class="mobile-icon-nav-status check-status ellipsis" title="Check ticket status">
+                <span>Check ticket status</span>
+              </a>
+            </div>  </nav>
+</div>--> 
+    </section> 
+   </header> 
+   <!--   
+<nav class="page-tabs" >
+
+<a data-toggle-dom="#header-tabs" href="#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile"></a>
+<div class="nav-link" id="header-tabs">
+
+
+<a href="/support/home" class="">
+Home
+</a>
+
+
+
+<a href="/support/solutions" class="">
+Solutions
+</a>
+
+
+
+<a href="/support/discussions" class="">
+Forums
+</a>
+
+ 
+</div>
+
+</nav>
+
+--> 
+   <script>
+  jQuery(document).ready(function() {
+    
+    //Please change the text "Please enter your search team" to change the text.
+    jQuery('[rel="page-search"]').attr('placeholder','Search articles, guides, tutorials...');
+    
+    var tab_urls = [];
+    jQuery('#header-tabs li a').each(function() { 
+      tab_urls.push(jQuery(this).attr('href')); 
+    });
+    
+    if (jQuery.inArray(window.location.pathname,tab_urls) != -1) {
+      console.log('true');
+      jQuery('#header-tabs li a[href="'+tab_urls[jQuery.inArray(window.location.pathname,tab_urls)]+'"]').addClass('active'); 
+    }
+    else {
+      console.log('false');
+      jQuery('#header-tabs li a[href="'+tab_urls[jQuery.inArray(window.location.pathname,tab_urls)]+'"]').removeClass('active'); 
+    }
+  
+  });
+  
+</script> 
+   <!-- Notification Messages --> 
+   <div class="alert alert-with-close notice" id="noticeajax" style="display:none;"></div> 
+   <div class="c-wrapper clearfix"> 
+    <script>
+  jQuery(document).ready(function(){
+  
+  jQuery("p:contains('Modified on:')").text(jQuery("p:contains('Modified on:')").text().substr(0,jQuery("p:contains('Modified on:')").text().indexOf("at")));
+  
+  
+  });
+</script> 
+    <section class="content-holder equal-height center-holder"> 
+     <section class="main content rounded-6 min-height-on-desktop clearfix" id="article-show-9000013069"> 
+      <div class="breadcrumb"> 
+       <a href="../../solutions.html"> Knowledge base </a> 
+       <a href="../9000049010.html">Documentation</a> 
+       <a href="../folders/9000074809.html">Browser View</a> 
+      </div> 
+      <b class="page-stamp page-stamp-article"> <b class="icon-page-article"></b> </b> 
+      <h2 class="heading">Lightweight or Heavyweight <a href="javascript:print();" class="icon-print solution-print-icon" title="Print this Article"></a> <span style="color:green;">(轻量级或重量级)</span></h2> 
+      <p>Modified on: Fri, 23 Aug, 2019 at 5:26 PM</p> 
+      <hr> 
+      <article class="article-body" id="article-body"> 
+       <p style="background-color: rgb(255, 240, 193); border-left: 6px solid rgb(255, 152, 0); padding: 12px;"><strong>Note:&nbsp;</strong>Advice in this article will only work for JxBrowser 6. See the corresponding article for JxBrowser 7 <a href="https://jxbrowser-support.teamdev.com/docs/guides/browser-view.html#rendering">here</a>.<span style="color:green;">(注意：本文中的建议仅适用于JxBrowser6，JxBrowser7相应文章请点击这里。)</span></p>
+       <p><br></p>
+       <p>JxBrowser supports two rendering modes: <strong>lightweight</strong> and <strong>heavyweight</strong>.<span style="color:green;">(JxBrowser支持两种渲染模式：轻量级和重量级。)</span></p>
+       <p><br></p>
+       <p>By default, heavyweight rendering mode is enabled, so when you create <span style="font-family: 'Courier New';">Browser</span> instance using the following code, it creates a new <span style="font-family: 'Courier New';">Browser</span> instance configured to use heavyweight rendering mode:&nbsp;<span style="color:green;">(默认情况下，启用了重量级渲染模式，因此，使用以下代码创建浏览器实例时，它将创建一个配置为使用重量级渲染模式的新浏览器实例：)</span></p>
+       <pre rel="highlighter">Browser browser = new Browser();</pre>
+       <p>To create a new <span style="font-family: 'Courier New';">Browser</span> instance with specified rendering mode use the following way:&nbsp;<span style="color:green;">(要使用指定的呈现方式创建新的Browser实例，请使用以下方式：)</span></p>
+       <pre data-code-brush="java" rel="highlighter">// Creates Browser instance with enabled lightweight rendering mode
+Browser browser = new Browser(BrowserType.LIGHTWEIGHT);
+
+// Creates Browser instance with enabled heavyweight rendering mode
+Browser browser = new Browser(BrowserType.HEAVYWEIGHT);</pre>
+       <p>The differences between lightweight and heavyweight rendering modes and recommendations about what rendering mode you should use in your application you can find below:<span style="color:green;">(轻量级渲染模式和重量级渲染模式之间的差异以及有关在应用程序中应使用哪种渲染模式的建议，您可以在下面找到：)</span></p>
+       <p><br></p>
+       <h1>Lightweight (off-screen)<span style="color:green;">(轻巧（屏幕外）)</span></h1>
+       <p>In lightweight rendering mode Chromium engine renders web page off-screen using CPU. Images that represent different parts of loaded web page are stored in shared memory. JxBrowser reads the images from the shared memory and displays them using standard Java Swing/JavaFX 2D Graphics API.<span style="color:green;">(在轻量级渲染模式下，Chromium引擎使用CPU在屏幕外渲染网页。代表加载的网页的不同部分的图像存储在共享内存中。 JxBrowser从共享内存中读取图像，并使用标准的Java Swing / JavaFX 2D图形API显示它们。)</span></p>
+       <p><br></p>
+       <p>To interact with displayed web page we listen to mouse and keyboard events using Java Events API, convert them to appropriate Chromium mouse/keyboard events, and send them to Chromium engine. With this approach we receive a pure lightweight solution.<span style="color:green;">(为了与显示的网页进行交互，我们使用Java Events API监听鼠标和键盘事件，将它们转换为适当的Chromium鼠标/键盘事件，然后将它们发送给Chromium引擎。通过这种方法，我们得到了一个纯粹的轻量级解决方案。)</span></p>
+       <p><br></p>
+       <p>This rendering mode works great if you need a true lightweight Swing/JavaFX component that allows displaying modern HTML5/JavaScript/CSS web pages in your Java application. You can make this lightweight component semitransparent, display other components on top of it, put it into <span style="font-size: 13px; font-family: 'Courier New';">JLayeredPane</span> or <span style="font-size: 13px; font-family: 'Courier New';">JInternalFrame</span>, get notifications about mouse and keyboard events, etc.&nbsp;<span style="color:green;">(如果您需要一个真正的轻量级Swing / JavaFX组件，该组件可以在Java应用程序中显示现代HTML5 / JavaScript / CSS网页，则此呈现模式非常有用。您可以使这个轻量级组件成为半透明的，在其之上显示其他组件，将其放入JLayeredPane或JInternalFrame中，获取有关鼠标和键盘事件的通知等。)</span></p>
+       <p><br></p>
+       <p><strong>Please note</strong>, that JxBrowser does not support accessibility in a lightweight mode.<span style="color:green;">(请注意，JxBrowser在轻量模式下不支持辅助功能。)</span></p>
+       <p><br></p>
+       <h2>Headless environment<span style="color:green;">(无头环境)</span></h2>
+       <p>In case you need to use JxBrowser in a headless Linux environment, we recommend that you use the Lightweight rendering mode.<span style="color:green;">(如果您需要在无头Linux环境中使用JxBrowser，我们建议您使用轻量级渲染模式。)</span></p>
+       <p><br></p>
+       <p>There are two main reasons for that:<span style="color:green;">(这样做的主要原因有两个：)</span></p>
+       <ol>
+        <li>The Heavyweight (GPU-accelerated) rendering mode running in a headless environment via <a href="https://jxbrowser.support.teamdev.com/support/solutions/articles/9000128668" rel="noreferrer noopener">xvfb</a> is useless because GPU acceleration in xvfb is disabled.<span style="color:green;">(通过xvfb在无头环境中运行的重量级（GPU加速）渲染模式是无用的，因为禁用了xvfb中的GPU加速。)</span></li>
+        <li>Very often in such environment the JxBrowser functionality that allows <a href="https://jxbrowser.support.teamdev.com/support/solutions/articles/9000012877" rel="noreferrer noopener">getting screenshots</a> of the loaded web-pages is used. That functionality is available in the Lightweight rendering mode only.<span style="color:green;">(在这种环境中，通常会使用JxBrowser功能来获取已加载网页的屏幕截图。该功能仅在轻量级渲染模式下可用。)</span></li>
+       </ol>
+       <p><br></p>
+       <h2>Limitations<span style="color:green;">(局限性)</span></h2>
+       <ul>
+        <li>Heavy animation on loaded web page cause high CPU and memory usage. It happens because Chromium engine needs to render a lot of images and save them into allocated shared memory.<span style="color:green;">(加载的网页上的动画过多会导致较高的CPU和内存使用率。发生这种情况是因为Chromium引擎需要渲染很多图像并将其保存到分配的共享内存中。)</span></li>
+        <li>In lightweight mode only Chromium plugins that supports windowless mode can be displayed. Since rendering is done off-screen, Flash player or other plugin must support windowless (off-screen) rendering as well. If plugin doesn't support off-screen rendering, it will not be displayed in lightweight mode.<span style="color:green;">(在轻量模式下，只能显示支持无窗口模式的Chromium插件。由于渲染是在屏幕外完成的，因此Flash Player或其他插件也必须支持无窗口（屏幕外）渲染。如果插件不支持屏幕外渲染，则不会以轻量模式显示。)</span></li>
+        <li>Mouse/keyboard/touch events are processes on Java side and forwarded to Chromium engine. Right now Java doesn't provide fully functional touch events support, so in lightweight rendering mode JxBrowser doesn't support some touch gestures. Same limitation is true for Drag&amp;Drop functionality. In lightweight rendering mode, drag and drop is processed using Java API, so it doesn't work exactly as in Google Chro<span rel="tempredactor">me. <a href="http://jxbrowser.support.teamdev.com/solution/articles/9000013073-working-with-drag-drop" rel="noreferrer noopener" target="_blank">Drag&amp;Drop</a> su</span>pports only predefined set of flavours.<span style="color:green;">(鼠标/键盘/触摸事件是Java端的进程，并转发给Chromium引擎。目前，Java不提供全功能的触摸事件支持，因此在轻量级渲染模式下，JxBrowser不支持某些触摸手势。拖放功能也有相同的限制。在轻量级渲染模式下，拖放操作是使用Java API处理的，因此它无法完全像在Google Chrome中一样工作。拖放仅支持预定义的一组口味。)</span></li>
+       </ul>
+       <p><br></p>
+       <h1>Heavyweight (GPU-accelerated)<span style="color:green;">(重量级（GPU加速）)</span></h1>
+       <p>In the heavyweight rendering mode, which is default mode in JxBrowser, we embed a native window into your Java application window and configure Chromium engine to render content into this native window using GPU.<span style="color:green;">(在重量级渲染模式（这是JxBrowser的默认模式）中，我们将本机窗口嵌入到Java应用程序窗口中，并配置Chromium引擎以使用GPU将内容渲染到该本机窗口中。)</span></p>
+       <p><br></p>
+       <p>User interaction with displayed web page is handled by the Chromium engine. The native Chromium window receives and processes all mouse/keyboard/touch events using platform specific native functionality when it is focused. Such behavior brings a better support of these events compared to the lightweight rendering mode where JxBrowser has to process Java events and forward them to Chromium engine.<br><br>However, when the native window is focused, the Java application does not receive the mouse/keyboard/touch events automatically, so these events are forwarded to the Java side after processing them in Chromium.&nbsp;<span style="color:green;">(用户与显示的网页的交互由Chromium引擎处理。 Chromium原生窗口在聚焦时会使用平台特定的原生功能来接收和处理所有鼠标/键盘/触摸事件。与JxBrowser必须处理Java事件并将其转发到Chromium引擎的轻量级渲染模式相比，这种行为为这些事件提供了更好的支持。但是，当本机窗口成为焦点时，Java应用程序不会自动接收鼠标/键盘/触摸事件，因此在Chromium中处理这些事件后，这些事件将转发到Java端。)</span></p>
+       <p><br></p>
+       <p>Heavyweight (GPU-accelerated) rendering mode works much faster compared to lightweight rendering mode. Rendering performance is the same as in Google Chrome. You can display full screen video or HTML5 animation with 60fps. Compared to lightweight rendering mode, CPU and memory usage is much smaller, because web page's content is rendered via GPU.<span style="color:green;">(与轻量级渲染模式相比，重量级（GPU加速）渲染模式工作更快。渲染性能与Google Chrome浏览器相同。您可以显示全屏视频或60fps的HTML5动画。与轻量级渲染模式相比，CPU和内存使用量要小得多，因为网页内容是通过GPU渲染的。)</span></p>
+       <p><br></p>
+       <p>So, if rendering performance is very important for your application, then we recommend that you use the default heavyweight rendering mode.<span style="color:green;">(因此，如果渲染性能对于您的应用程序非常重要，那么我们建议您使用默认的重量级渲染模式。)</span></p>
+       <p><br></p>
+       <h2>Limitations<span style="color:green;">(局限性)</span></h2>
+       <p><strong>Lightweight and heavyweight mixing</strong><span style="color:green;">(轻量级和重量级混合)</span></p>
+       <p>Java Swing/JavaFX toolkits allows building UI based on lightweight components. When we embed a native window into Java frame it can lead to a well-known issue with <a href="http://www.oracle.com/technetwork/articles/java/mixing-components-433992.html" rel="noreferrer noopener" target="_blank">mixing heavyweight and lightweight components</a>. It's not recommended that you put heavyweight <span style="font-family: 'Courier New';">BrowserView</span> component into <span style="font-family: 'Courier New';">JLayeredPane</span> or <span style="font-family: 'Courier New';">JInternalFrame</span>, or mix it with the lightweight components (e.g. trying to display a lightweight component over heavyweight <span style="font-family: 'Courier New';">BrowserView</span>).<span style="color:green;">(Java Swing / JavaFX工具箱允许基于轻量级组件构建UI。当我们将本机窗口嵌入Java框架时，可能会导致混合重量级组件和轻量级组件的问题。不建议您将重量级的BrowserView组件放入JLayeredPane或JInternalFrame中，或将其与轻量级组件混合（例如，尝试在重量级BrowserView上显示轻量级组件）。)</span></p>
+       <p><br></p>
+       <p><strong>Layered windows in JavaFX applications</strong><span style="color:green;">(JavaFX应用程序中的分层窗口)</span></p>
+       <p>Configuring the stage with the <span style="font-family: 'Courier New', Courier, monospace;">StageStyle.TRANSPARENT</span> style adds the <span style="font-family: 'Courier New', Courier, monospace;">WS_EX_LAYERED</span> window style flag to JavaFX window. This flag is used to create a <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms632599(v=vs.85).aspx#layered" rel="noreferrer noopener" target>layered window</a>. The layered window represents an off-screen window that draws its content off-screen. If we embed another window (it happens when heavyweight rendering mode is used in JxBrowser) into a layered window, its content will not be painted because of window types conflict.<span style="color:green;">(使用StageStyle.TRANSPARENT样式配置舞台会将WS_EX_LAYERED窗口样式标志添加到JavaFX窗口。此标志用于创建分层窗口。分层窗口表示一个屏幕外窗口，该窗口将其内容绘制到屏幕外。如果我们将另一个窗口（在JxBrowser中使用重量级渲染模式时发生）嵌入到分层窗口中，则由于窗口类型冲突，将不会绘制其内容。)</span></p>
+       <p><br></p>
+       <p><strong>Browser disposal in JavaFX</strong><span style="color:green;">(JavaFX中的浏览器处理)</span></p>
+       <p>Disposing <span style="font-family: 'Courier New', Courier, monospace;">Browser</span> instance in the incorrect thread in JavaFX may lead to a deadlock on the native side. The <span style="font-family: 'Courier New', Courier, monospace;">Browser</span> instances must be disposed on different threads depending on the operating system. In Linux and macOS the <span style="font-family: 'Courier New', Courier, monospace;">Browser.dispose()</span> method must be called on the UI thread, while on Windows <span style="font-family: 'Courier New', Courier, monospace;">Browser</span> must be disposed on the non-UI thread. For example:<span style="color:green;">(将浏览器实例放置在JavaFX中的错误线程中可能会导致本机端出现死锁。根据操作系统的不同，必须将浏览器实例放置在不同的线程上。在Linux和macOS中，必须在UI线程上调用Browser.dispose（）方法，而在Windows上必须将浏览器放在非UI线程上。例如：)</span></p>
+       <table border="1" cellpadding="0" cellspacing="0" id="table63263" style="width: 100%; border-collapse:collapse; border:1px solid #afafaf;width:100%;">
+        <tbody>
+         <tr>
+          <td style="width: 86.692%;"><pre data-code-brush="java" rel="highlighter">Platform.runLater(new Runnable() {
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public void run() {
+&nbsp; &nbsp; &nbsp; &nbsp; browser.dispose();
+&nbsp; &nbsp; }
+});</pre></td>
+          <td style="width: 13.232%; vertical-align: middle; text-align: center;"><strong>Linux and MacOS&nbsp;</strong><br></td>
+         </tr>
+         <tr>
+          <td style="width: 86.692%;"><pre data-code-brush="java" rel="highlighter">new Thread(new Runnable() {
+&nbsp; &nbsp; @Override
+&nbsp; &nbsp; public void run() {
+&nbsp; &nbsp; &nbsp; &nbsp; browser.dispose();
+&nbsp; &nbsp; }
+}).start();</pre></td>
+          <td style="width: 13.232%; vertical-align: middle; text-align: center;"><strong>Windows</strong><br></td>
+         </tr>
+        </tbody>
+       </table>
+       <p><br></p> 
+      </article> 
+      <hr> 
+     </section> 
+     <section class="sidebar content clearfix rounded-6"> 
+      <div id="related_articles">
+       <div class="cs-g-c">
+        <section class="article-list">
+         <h3 class="list-lead">Related Articles</h3>
+        </section>
+       </div>
+      </div> 
+     </section> 
+    </section> 
+    <div style="color:red;text-align:center;width:100%;">
+      原文地址:
+     <a href="https://jxbrowser.support.teamdev.com/support/solutions" target="_blank">https://jxbrowser.support.teamdev.com/support/solutions</a>，本文档由玄翼猫进行整理，翻译(机器翻译)，翻译校对。
+     <br> 我的开发经验：
+     <a href="http://www.xuanyimao.com/softarticle/jxbrowser.html" target="_blank">http://www.xuanyimao.com/softarticle/jxbrowser.html</a> 
+    </div>
+   </div> 
+  </div> 
+  <!--<footer class="footer rounded-6">
+	<nav class="footer-links">
+		
+				
+					<a href="/support/home" class="">Home</a>
+				
+					<a href="/support/solutions" class="active">Solutions</a>
+				
+					<a href="/support/discussions" class="">Forums</a>
+				
+		
+		
+		
+	</nav>
+</footer>
+--> 
+  <div class="copyright">
+   © 2007 –&nbsp;2020 
+   <a href="http://www.teamdev.com/" target="_blank">TeamDev.</a> All rights reserved. 
+  </div> 
+  <script src="https://assets9.freshdesk.com/assets/cdn/portal_bottom-79245b6b714e53fa8ed9a0db1a95e76f.js" type="text/javascript"></script> 
+  <script src="https://assets5.freshdesk.com/assets/cdn/redactor-7e802312e7db6fddcb8a4f8423a2cb6c.js" type="text/javascript"></script> 
+  <script src="https://assets2.freshdesk.com/assets/cdn/freshfone_portal-38510e9dcd7cf1e2bce25e2201e23cef.js" type="text/javascript"></script> 
+  <script src="https://assets7.freshdesk.com/assets/cdn/lang/en-d58d68912364ea68a01bde932774f9dd.js" type="text/javascript"></script> 
+  <!-- for i18n-js translations --> 
+  <script src="../../../../assets5.freshdesk.com/assets/cdn/i18n/portal/en-e757d3b3f03360ef6d1c7cf4264cdbb4.js" type="text/javascript"></script> 
+  <!-- Including default portal based script at the bottom --> 
+  <script type="text/javascript">
+//<![CDATA[
+	
+	jQuery(document).ready(function() {
+					
+		// Setting the locale for moment js
+		moment.lang('en');
+
+		var validation_meassages = {"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date ( ISO ).","number":"Please enter a valid number.","digits":"Please enter only digits.","creditcard":"Please enter a valid credit card number.","equalTo":"Please enter the same value again.","two_decimal_place_warning":"Value cannot have more than 2 decimal digits","select_atleast_one":"Select at least one option.","select2_minimum_limit":"Please type %{char_count} or more letters","select2_maximum_limit":"You can only select %{limit} %{container}","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","select2_maximum_limit_jq":"You can only select {0} {1}","facebook_limit_exceed":"Your Facebook reply was over 8000 characters. You'll have to be more clever.","messenger_limit_exceeded":"Oops! You have exceeded Messenger Platform's character limit. Please modify your response.","not_equal_to":"This element should not be equal to","email_address_invalid":"One or more email addresses are invalid.","twitter_limit_exceed":"Oops! You have exceeded Twitter's character limit. You'll have to modify your response.","password_does_not_match":"The passwords don't match. Please try again.","valid_hours":"Please enter a valid hours.","reply_limit_exceed":"Your reply was over 2000 characters. You'll have to be more clever.","url_format":"Invalid URL format","url_without_slash":"Please enter a valid URL without '/'","link_back_url":"Please enter a valid linkback URL","requester_validation":"Please enter a valid requester details or <a href=\"#\" id=\"add_requester_btn_proxy\">add new requester.</a>","agent_validation":"Please enter valid agent details","email_or_phone":"Please enter a Email or Phone Number","upload_mb_limit":"Upload exceeds the available 15MB limit","invalid_image":"Invalid image format","atleast_one_role":"At least one role is required for the agent","invalid_time":"Invalid time.","remote_fail":"Remote validation failed","trim_spaces":"Auto trim of leading & trailing whitespace","hex_color_invalid":"Please enter a valid hex color value.","name_duplication":"The name already exists.","invalid_value":"Invalid value","invalid_regex":"Invalid Regular Expression","same_folder":"Cannot move to the same folder.","maxlength_255":"Please enter less than 255 characters","decimal_digit_valid":"Value cannot have more than 2 decimal digits","atleast_one_field":"Please fill at least {0} of these fields.","atleast_one_portal":"Select atleast one portal.","custom_header":"Please type custom header in the format -  header : value","same_password":"Should be same as Password","select2_no_match":"No matching %{container} found","integration_no_match":"no matching data...","time":"Please enter a valid time","valid_contact":"Please add a valid contact","field_invalid":"This field is invalid"}	
+
+		jQuery.extend(jQuery.validator.messages, validation_meassages );
+
+
+		jQuery(".call_duration").each(function () {
+			var format,time;
+			if (jQuery(this).data("time") === undefined) { return; }
+			if(jQuery(this).hasClass('freshcaller')){ return; }
+			time = jQuery(this).data("time");
+			if (time>=3600) {
+			 format = "hh:mm:ss";
+			} else {
+				format = "mm:ss";
+			}
+			jQuery(this).html(time.toTime(format));
+		});
+	});
+
+	// Shortcuts variables
+	var Shortcuts = {"global":{"help":"?","save":"mod+return","cancel":"esc","search":"/","status_dialog":"mod+alt+return","save_cuctomization":"mod+shift+s"},"app_nav":{"dashboard":"g d","tickets":"g t","social":"g e","solutions":"g s","forums":"g f","customers":"g c","reports":"g r","admin":"g a","ticket_new":"g n","compose_email":"g m"},"pagination":{"previous":"alt+left","next":"alt+right","alt_previous":"j","alt_next":"k"},"ticket_list":{"ticket_show":"return","select":"x","select_all":"shift+x","search_view":"v","show_description":"space","unwatch":"w","delete":"#","pickup":"@","spam":"!","close":"~","silent_close":"alt+shift+`","undo":"z","reply":"r","forward":"f","add_note":"n","scenario":"s"},"ticket_detail":{"toggle_watcher":"w","reply":"r","forward":"f","add_note":"n","close":"~","silent_close":"alt+shift+`","add_time":"m","spam":"!","delete":"#","show_activities_toggle":"}","properties":"p","expand":"]","undo":"z","select_watcher":"shift+w","go_to_next":["j","down"],"go_to_previous":["k","up"],"scenario":"s","pickup":"@","collaboration":"d"},"social_stream":{"search":"s","go_to_next":["j","down"],"go_to_previous":["k","up"],"open_stream":["space","return"],"close":"esc","reply":"r","retweet":"shift+r"},"portal_customizations":{"preview":"mod+shift+p"},"discussions":{"toggle_following":"w","add_follower":"shift+w","reply_topic":"r"}};
+	
+	// Date formats
+	var DATE_FORMATS = {"non_us":{"moment_date_with_week":"ddd, D MMM, YYYY","datepicker":"d M, yy","datepicker_escaped":"d M yy","datepicker_full_date":"D, d M, yy","mediumDate":"d MMM, yyyy"},"us":{"moment_date_with_week":"ddd, MMM D, YYYY","datepicker":"M d, yy","datepicker_escaped":"M d yy","datepicker_full_date":"D, M d, yy","mediumDate":"MMM d, yyyy"}};
+
+	var lang = { 
+		loadingText: "Please Wait...",
+		viewAllTickets: "View all tickets"
+	};
+
+
+//]]>
+</script> 
+  <img src="https://jxbrowser.support.teamdev.com/support/solutions/articles/9000013069-lightweight-or-heavyweight/hit" alt=" " aria-hidden="true"> 
+  <script type="text/javascript">
+     		I18n.defaultLocale = "en";
+     		I18n.locale = "en";
+		</script>  
+  <!-- Mirrored from jxbrowser.support.teamdev.com/support/solutions/articles/9000013069-lightweight-or-heavyweight by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 07:30:50 GMT --> 
+ </body>
+</html>

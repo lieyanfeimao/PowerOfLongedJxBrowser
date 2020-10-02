@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+
+        <!--[if lt IE 7]><html class="no-js ie6" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 7]><html class="no-js ie7" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 8]><html class="no-js ie8" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 9]><html class="no-js ie9" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if IE 10]><html class="no-js ie10" lang="en" dir="ltr" data-date-format="non_us"><![endif]-->
+        <!--[if (gt IE 10)|!(IE)]><!--><html class="no-js " lang="en" dir="ltr" data-date-format="non_us"><!--<![endif]-->
+	
+<!-- Mirrored from jxbrowser.support.teamdev.com/support/solutions/9000049010 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 07:30:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		
+		<!-- Title for the page -->
+<title> Documentation : JxBrowser </title>
+
+<!-- Meta information -->
+
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="description" content= "" />
+      <meta name="author" content= "" />
+       <meta property="og:title" content="Documentation" />  <meta property="og:url" content="9000049010.html" />  <meta property="og:description" content="" />  <meta property="og:image" content="../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w8657.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS6FNSMY2WD6T3JNC%2F20200914%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200914T051635Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c116fc89026f5523d9ec125ce9dafc0a2e800b2dc097c81bf8121cfb61394164" />  <meta property="og:site_name" content="TeamDev" />  <meta property="og:type" content="article" />  <meta name="twitter:title" content="Documentation" />  <meta name="twitter:url" content="9000049010.html" />  <meta name="twitter:description" content="" />  <meta name="twitter:image" content="../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w8657.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAS6FNSMY2WD6T3JNC%2F20200914%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200914T051635Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c116fc89026f5523d9ec125ce9dafc0a2e800b2dc097c81bf8121cfb61394164" />  <meta name="twitter:card" content="summary" />  <link rel="canonical" href="9000049010.html" /> 
+
+<!-- Responsive setting -->
+<link rel="apple-touch-icon" href="../../assets/touch/touch-icon-iphone.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../../assets/touch/touch-icon-ipad.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../../assets/touch/touch-icon-iphone-retina.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../../assets/touch/touch-icon-ipad-retina.png" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" /> 
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+		
+		<!-- Adding meta tag for CSRF token -->
+		<meta content="authenticity_token" name="csrf-param" />
+<meta content="7j/tDGp72FIEKUcV1GWO2F+xPqog4bAajVJCd+52IkQ=" name="csrf-token" />
+		<!-- End meta tag for CSRF token -->
+		
+		<!-- Fav icon for portal -->
+		<link rel='shortcut icon' href='https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676283/fav_icon/hMZTQDr-Nvqs3SXSy3Qy_FxEdWez5OZhbA.ico' />
+
+		<!-- Base stylesheet -->
+ 
+		<link href="https://assets2.freshdesk.com/assets/cdn/portal_print-a389f1ef3e87261e7264e3e70416d704.css" media="print" rel="stylesheet" type="text/css" />
+	  		<link href="https://assets4.freshdesk.com/assets/cdn/portal_utils-8853c5de5c2f34ad29f67725522bd688.css" media="screen" rel="stylesheet" type="text/css" />
+
+		
+		<!-- Theme stylesheet -->
+
+		<link href="../theme8d13.css?v=1591291426" media="screen" rel="stylesheet" type="text/css">
+
+		<!-- Google font url if present -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+
+		<!-- Including default portal based script framework at the top -->
+			<script src="https://assets5.freshdesk.com/assets/cdn/portal_head-43241a4601c08e2bd085bd76ec5fbfca.js" type="text/javascript"></script>
+		<!-- Including syntexhighlighter for portal -->
+		<script src="https://assets8.freshdesk.com/assets/cdn/prism-3f28a5413839eaa941ab06e1ae6a969c.js" type="text/javascript"></script>
+
+			<!-- Portal specific integrations (Google analytics) -->
+	<!-- google analytices starts here -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	    _gaq.push(['_setAccount', 'UA-41668241-9']);
+	    _gaq.push(['_addDevId', '00P19']);
+	    _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<!-- google analytices ends here -->
+
+
+		<!-- Access portal settings information via javascript -->
+		 <script type="text/javascript">     var portal = {"language":"en","name":"JxBrowser","contact_info":"","current_page_name":"solution_category","current_tab":"solutions","vault_service":{"url":"https://vault-service.freshworks.com/data","max_try":2,"product_name":"fd"},"current_account_id":313551,"preferences":{"bg_color":"#ffffff","header_color":"#ffffff","help_center_color":"#ffffff","footer_color":"#777777","tab_color":"#ffffff","tab_hover_color":"#4c4b4b","btn_background":"#ffffff","btn_primary_background":"#6c6a6a","baseFont":"Helvetica Neue","textColor":"#333333","headingsFont":"Open Sans Condensed","headingsColor":"#333333","linkColor":"#049cdb","linkColorHover":"#036690","inputFocusRingColor":"#049cdb","nonResponsive":"false"},"image_placeholders":{"spacer":"https://assets1.freshdesk.com/assets/misc/spacer.gif","profile_thumb":"https://assets4.freshdesk.com/assets/misc/profile_blank_thumb-e1a34033b3073cb80f5becc0b644bfca.jpg","profile_medium":"https://assets9.freshdesk.com/assets/misc/profile_blank_medium-4ae2280a460eae3c870acb7a7545b7e5.jpg"},"falcon_portal_theme":false};     var attachment_size = 20;  </script> 
+
+
+		
+	</head>
+	<body>
+            	
+		
+		<div class="page clearfix">
+	  <script>
+  jQuery(document).ready(function(){
+    
+    jQuery(".user-ava").click(function(){
+      jQuery(this).toggleClass("profile_active");
+    
+    });    
+    
+    jQuery("#notice:contains('You must be logged out to access this page')").css('display', 'none');
+    jQuery("#notice:contains('No user was found with that email address')").css('top', '-165px');
+   
+    
+    if(window.location.href == 'https://teamdev.freshdesk.com/support/home' || window.location.href == '../home.html'){
+    	jQuery('.banner').addClass('home-page-banner');			
+        jQuery('#notice').addClass('home-notice');
+    } 
+    
+    if(window.location.href == 'http://teamdev.freshdesk.com/support/home' || window.location.href == '../home.html'){
+    	jQuery('.banner').addClass('home-page-banner');			
+        jQuery('#notice').addClass('home-notice');
+    }  
+    
+    
+    
+  });
+</script>
+
+
+
+
+
+
+
+<header class="banner">
+  <div class="banner-wrapper center-holder">
+    <div class="banner-title">
+      <a href="https://teamdev.com/jxbrowser"class='portal-logo'><span class="portal-img"><i></i>
+                    <img src='../../../s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9020676264/logo/uRxGW2Mvdl6yDSKmsuiZTaG73TkXrsHs9w.png' alt="Logo"
+                        onerror="default_image_error(this)" data-type="logo" />
+                 </span></a>     
+      <h1 class="ellipsis heading"><a class="target-blank" href="https://www.teamdev.com/jxbrowser" target="_blank">JxBrowser</a></h1>
+    </div>
+    <!-- <div class="welcome">Welcome <b></b> </div>  <b><a href="/support/login"><b>Login</b></a></b>-->
+    
+    <a data-toggle-dom="#header-tabs" href="#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+    <nav class="banner-nav mobileLogin">
+      
+      <ul class="nav-link" id="header-tabs">
+            
+        <li><a href="../home.html">Home</a></li>
+        <li> <a href="9000050171.html">Getting Started</a></li>
+        <li><a href="../solutions.html">Documentation</a></li>
+        <li><a class="target-blank" href="http://stackoverflow.com/questions/tagged/jxbrowser">Questions</a></li>
+        <li><a href="../discussions/forums/9000110576.html">Release Notes</a></li>
+        <li class="btn-item"><a class="btn btn-log" href="https://jxbrowser.support.teamdev.com/support/login">Sign in</a></li>
+        
+      </ul>     
+      
+      
+    </nav>   
+    
+  </div>
+  
+  <!-- Search and page links for the page -->
+  
+  <section class="help-center rounded-6">	
+    <div class="hc-search">
+      <div class="hc-search-c">
+        <!-- <h2 class="heading hide-in-mobile">How can we help you today?</h2> -->
+        
+        <h2 class="heading hide-in-mobile"> Welcome to JxBrowser Help Center</h2>                 
+        <form class="hc-search-form print--remove" autocomplete="off" action="https://jxbrowser.support.teamdev.com/support/search/solutions" id="hc-search-form" data-csrf-ignore="true">
+	<div class="hc-search-input">
+	<label for="support-search-input" class="hide">Enter your search term here...</label>
+		<input placeholder="Enter your search term here..." type="text" 
+			name="term" class="special" value="" 
+            rel="page-search" data-max-matches="10" id="support-search-input">
+	</div>
+	<div class="hc-search-button">
+		<button class="btn btn-primary" type="submit" autocomplete="off">
+			<i class="mobile-icon-search hide-tablet"></i>
+			<span class="hide-in-mobile">
+				Search
+			</span>
+		</button>	
+	</div>
+</form>
+      </div>
+    </div>
+    <!--<div class="hc-nav ">				
+ <nav>  <div class="hide-in-mobile"><a href=/support/login>Login</a> to submit a new ticket</div>   <div>
+              <a href="/support/tickets" class="mobile-icon-nav-status check-status ellipsis" title="Check ticket status">
+                <span>Check ticket status</span>
+              </a>
+            </div>  </nav>
+</div>-->
+  </section>
+  
+</header>
+
+<!--   
+<nav class="page-tabs" >
+
+<a data-toggle-dom="#header-tabs" href="#" data-animated="true" class="mobile-icon-nav-menu show-in-mobile"></a>
+<div class="nav-link" id="header-tabs">
+
+
+<a href="/support/home" class="">
+Home
+</a>
+
+
+
+<a href="/support/solutions" class="">
+Solutions
+</a>
+
+
+
+<a href="/support/discussions" class="">
+Forums
+</a>
+
+ 
+</div>
+
+</nav>
+
+-->
+
+<script>
+  jQuery(document).ready(function() {
+    
+    //Please change the text "Please enter your search team" to change the text.
+    jQuery('[rel="page-search"]').attr('placeholder','Search articles, guides, tutorials...');
+    
+    var tab_urls = [];
+    jQuery('#header-tabs li a').each(function() { 
+      tab_urls.push(jQuery(this).attr('href')); 
+    });
+    
+    if (jQuery.inArray(window.location.pathname,tab_urls) != -1) {
+      console.log('true');
+      jQuery('#header-tabs li a[href="'+tab_urls[jQuery.inArray(window.location.pathname,tab_urls)]+'"]').addClass('active'); 
+    }
+    else {
+      console.log('false');
+      jQuery('#header-tabs li a[href="'+tab_urls[jQuery.inArray(window.location.pathname,tab_urls)]+'"]').removeClass('active'); 
+    }
+  
+  });
+  
+</script>
+  
+	<!-- Notification Messages -->
+	 <div class="alert alert-with-close notice" id="noticeajax" style="display:none;"></div> 
+
+	<div class="c-wrapper clearfix">		
+		<section class="center-holder one-column">
+  <section class="main content clearfix rounded-6 min-height-on-desktop" id="solutions-category-9000049010">
+      <div class="breadcrumb">
+          <a href="../solutions.html">Knowledge base</a>
+      </div>
+      <h2 class="heading">Documentation</h2>
+      <div class="cs-g-c column-grid">
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074194.html" title="Browser Engine"> Browser Engine <span class='item-count'>14</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012878-creating-browser.html" title="Creating Browser">Creating Browser</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000099104-creating-incognito-browser.html" title="Creating Incognito Browser">Creating Incognito Browser</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000154881-storing-user-data.html" title="Storing User Data">Storing User Data</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012879-disposing-browser.html" title="Disposing Browser">Disposing Browser</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012880-browser-preferences.html" title="Browser Preferences">Browser Preferences</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013718-restoring-browser.html" title="Restoring Browser">Restoring Browser</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013133-render-process-events.html" title="Render Process Events">Render Process Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000099101-render-process-id.html" title="Render Process ID">Render Process ID</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013706-getting-frame-ids.html" title="Getting Frame IDs">Getting Frame IDs</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013726-getting-product-version.html" title="Getting Product Version">Getting Product Version</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012882-finding-text.html" title="Finding Text">Finding Text</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013730-clearing-cache.html" title="Clearing Cache">Clearing Cache</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000091678-forwarding-key-events.html" title="Forwarding Key Events">Forwarding Key Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000102480-forwarding-mouse-events.html" title="Forwarding Mouse Events">Forwarding Mouse Events</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074842.html" title="Loading Content"> Loading Content <span class='item-count'>24</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013102-loading-url.html" title="Loading URL">Loading URL</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013103-loading-url-with-post.html" title="Loading URL with POST">Loading URL with POST</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013104-loading-html.html" title="Loading HTML">Loading HTML</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000115433-loading-html-from-jar.html" title="Loading HTML from JAR">Loading HTML from JAR</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013105-getting-html.html" title="Getting HTML">Getting HTML</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000074852-getting-selected-html.html" title="Getting Selected HTML">Getting Selected HTML</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013106-loading-events.html" title="Loading Events">Loading Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013107-loading-waiting.html" title="Loading &amp; Waiting">Loading &amp; Waiting</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000065675-displaying-pdf.html" title="Displaying PDF">Displaying PDF</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013108-network-events.html" title="Network Events">Network Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013109-handling-resources-loading.html" title="Handling Resources Loading">Handling Resources Loading</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013110-enabling-disabling-backspace-navigation.html" title="Enabling/Disabling Backspace Navigation">Enabling/Disabling Backspace Navigation</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013111-handling-ssl-certificate-errors.html" title="Handling SSL Certificate Errors">Handling SSL Certificate Errors</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000059220-ssl-certificate-verifier.html" title="SSL Certificate Verifier">SSL Certificate Verifier</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013112-navigation-history.html" title="Navigation History">Navigation History</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013113-user-agent.html" title="User-Agent">User-Agent</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013114-websockets.html" title="WebSockets">WebSockets</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013501-handling-loading.html" title="Handling Loading">Handling Loading</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013717-modifying-post-put-patch-upload-data.html" title="Modifying POST/PUT/PATCH Upload Data">Modifying POST/PUT/PATCH Upload Data</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000035453-html5-local-session-storages.html" title="HTML5 Local &amp; Session storages">HTML5 Local &amp; Session storages</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000074850-accessing-http-response-data.html" title="Accessing HTTP response data">Accessing HTTP response data</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000099121-http-server-whitelist.html" title="HTTP Server Whitelist">HTTP Server Whitelist</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000107014-custom-protocol-handler.html" title="Custom Protocol Handler">Custom Protocol Handler</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000135967-activex.html" title="ActiveX">ActiveX</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074793.html" title="Audio &amp; Video"> Audio &amp; Video <span class='item-count'>5</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013050-mp3-mp4-h-264.html" title="MP3/MP4/H.264">MP3/MP4/H.264</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013667-web-camera-microphone.html" title="Web Camera &amp; Microphone">Web Camera &amp; Microphone</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013729-full-screen-video.html" title="Full Screen Video">Full Screen Video</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000059196-muting-audio.html" title="Muting Audio">Muting Audio</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000074414-html5-video.html" title="HTML5 Video">HTML5 Video</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074800.html" title="Pop-ups"> Pop-ups <span class='item-count'>3</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013054-about-pop-ups.html" title="About Pop-ups">About Pop-ups</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013056-handling-pop-ups-swing.html" title="Handling Pop-ups Swing">Handling Pop-ups Swing</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013057-handling-pop-ups-javafx.html" title="Handling Pop-ups JavaFX">Handling Pop-ups JavaFX</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074839.html" title="Dialogs"> Dialogs <span class='item-count'>7</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013061-javascript-dialogs.html" title="JavaScript Dialogs">JavaScript Dialogs</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013088-file-download.html" title="File Download">File Download</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013089-file-upload.html" title="File Upload">File Upload</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013087-select-ssl-certificate.html" title="Select SSL Certificate">Select SSL Certificate</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000118865-select-custom-ssl-certificate.html" title="Select Custom SSL Certificate">Select Custom SSL Certificate</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013086-before-unload.html" title="Before Unload">Before Unload</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000044807-color-chooser.html" title="Color Chooser">Color Chooser</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074808.html" title="Proxy"> Proxy <span class='item-count'>2</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013067-working-with-proxy.html" title="Working with Proxy">Working with Proxy</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013068-system-proxy-settings.html" title="System Proxy Settings">System Proxy Settings</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074888.html" title="Authentication"> Authentication <span class='item-count'>2</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013138-handling-proxy-authentication.html" title="Handling Proxy Authentication">Handling Proxy Authentication</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013139-handling-basic-digest-and-ntlm-authentication.html" title="Handling Basic, Digest and NTLM Authentication">Handling Basic, Digest and NTLM Authentication</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074809.html" title="Browser View"> Browser View <span class='item-count'>21</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013069-lightweight-or-heavyweight.html" title="Lightweight or Heavyweight">Lightweight or Heavyweight</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013070-using-jxbrowser-in-swing.html" title="Using JxBrowser in Swing">Using JxBrowser in Swing</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013071-using-jxbrowser-in-javafx.html" title="Using JxBrowser in JavaFX">Using JxBrowser in JavaFX</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013072-using-jxbrowser-in-swt.html" title="Using JxBrowser in SWT">Using JxBrowser in SWT</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013719-custom-css-cursors.html" title="Custom CSS Cursors">Custom CSS Cursors</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013705-title-events.html" title="Title Events">Title Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013724-status-events.html" title="Status Events">Status Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013075-keyboard-mouse-events.html" title="Keyboard &amp; Mouse Events">Keyboard &amp; Mouse Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013076-handling-keyboard-events.html" title="Handling Keyboard Events">Handling Keyboard Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000059223-handling-mouse-events.html" title="Handling Mouse Events">Handling Mouse Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013077-editor-commands.html" title="Editor Commands">Editor Commands</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013073-drag-drop.html" title="Drag &amp; Drop">Drag &amp; Drop</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013079-content-scaling.html" title="Content scaling">Content scaling</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013074-context-menu.html" title="Context Menu">Context Menu</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013078-jmenubar.html" title="JMenuBar">JMenuBar</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013722-jinternalframe.html" title="JInternalFrame">JInternalFrame</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013728-jtabbedpane.html" title="JTabbedPane">JTabbedPane</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000148230-jpanel.html" title="JPanel">JPanel</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000104965-accelerated-lightweight-rendering.html" title="Accelerated Lightweight Rendering">Accelerated Lightweight Rendering</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000104967-transparent-background.html" title="Transparent Background">Transparent Background</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000165137-shortcuts.html" title="Shortcuts">Shortcuts</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074803.html" title="JavaScript Java Bridge"> JavaScript Java Bridge <span class='item-count'>9</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013059-calling-javascript-from-java.html" title="Calling JavaScript from Java">Calling JavaScript from Java</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013062-calling-java-from-javascript.html" title="Calling Java from JavaScript">Calling Java from JavaScript</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013060-console-messages.html" title="Console Messages">Console Messages</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013064-working-with-json.html" title="Working with JSON">Working with JSON</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013725-working-with-jquery.html" title="Working with jQuery">Working with jQuery</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000031864-working-with-scriptcontext.html" title="Working with ScriptContext">Working with ScriptContext</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013716-sending-form-data-to-java.html" title="Sending Form Data to Java">Sending Form Data to Java</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000091697-working-with-arrays.html" title="Working with Arrays">Working with Arrays</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000099124--jsaccessible.html" title="@JSAccessible">@JSAccessible</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074841.html" title="Plugins"> Plugins <span class='item-count'>5</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013097-about-plugins.html" title="About Plugins">About Plugins</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013098-plugins-manager.html" title="Plugins Manager">Plugins Manager</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013099-adobe-flash.html" title="Adobe Flash">Adobe Flash</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013100-microsoft-silverlight.html" title="Microsoft Silverlight">Microsoft Silverlight</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013101-java-applet.html" title="Java Applet">Java Applet</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074856.html" title="Printing"> Printing <span class='item-count'>4</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013118-printing-web-page.html" title="Printing Web Page">Printing Web Page</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013119-printing-web-page-to-pdf.html" title="Printing Web Page to PDF">Printing Web Page to PDF</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013120-print-settings.html" title="Print Settings">Print Settings</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013121-cancel-printing.html" title="Cancel Printing">Cancel Printing</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074855.html" title="Cookies"> Cookies <span class='item-count'>4</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013115-about-cookies.html" title="About Cookies">About Cookies</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013116-cookie-storage.html" title="Cookie Storage">Cookie Storage</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013117-accepting-rejecting-cookies.html" title="Accepting/Rejecting Cookies">Accepting/Rejecting Cookies</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000138160-cookie-encryption.html" title="Cookie Encryption">Cookie Encryption</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074195.html" title="Saving Web Page"> Saving Web Page <span class='item-count'>2</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012883-saving-web-page-to-file-files.html" title="Saving Web Page to File/Files">Saving Web Page to File/Files</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000012884-saving-web-page-to-png-image.html" title="Saving Web Page to PNG Image">Saving Web Page to PNG Image</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074807.html" title="Zoom"> Zoom <span class='item-count'>3</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013065-zooming-web-page.html" title="Zooming Web Page">Zooming Web Page</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013066-receiving-zoom-events.html" title="Receiving Zoom Events">Receiving Zoom Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000091679-enabling-disabling-zoom.html" title="Enabling/Disabling Zoom">Enabling/Disabling Zoom</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000095965.html" title="Integration"> Integration <span class='item-count'>1</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013135-jxbrowser-selenium.html" title="JxBrowser &amp; Selenium">JxBrowser &amp; Selenium</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074840.html" title="DOM"> DOM <span class='item-count'>19</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013090-working-with-document.html" title="Working with Document">Working with Document</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013091-finding-elements.html" title="Finding Elements">Finding Elements</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013710-element-attributes.html" title="Element Attributes">Element Attributes</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013711-creating-element-text-node.html" title="Creating Element &amp; Text Node">Creating Element &amp; Text Node</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013713-setting-node-value.html" title="Setting Node Value">Setting Node Value</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013092-select-option-elements.html" title="Select &amp; Option Elements">Select &amp; Option Elements</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013093-selecting-checkbox.html" title="Selecting CheckBox">Selecting CheckBox</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013727-getting-selected-text.html" title="Getting Selected Text">Getting Selected Text</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013094-simulating-click.html" title="Simulating Click">Simulating Click</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013095-dom-events.html" title="DOM Events">DOM Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013096-xpath.html" title="XPath">XPath</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013714-query-selector.html" title="Query Selector">Query Selector</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013715-working-with-form.html" title="Working with Form">Working with Form</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013720-scrolling-document.html" title="Scrolling Document">Scrolling Document</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013721-finding-node-at-point.html" title="Finding Node at Point">Finding Node at Point</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000091689-getting-element-bounds.html" title="Getting Element Bounds">Getting Element Bounds</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000118864-injecting-css.html" title="Injecting CSS">Injecting CSS</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000140950-listening-to-the-%d0%a1ontent-%d0%a1hanges.html" title="Listening to the Сontent Сhanges">Listening to the Сontent Сhanges</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000154609-simulating-dom-events.html" title="Simulating DOM Events">Simulating DOM Events</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074863.html" title="Deploying"> Deploying <span class='item-count'>5</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000024972-java-application.html" title="Java Application">Java Application</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013122-java-web-start.html" title="Java Web Start">Java Web Start</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013124-java-applet.html" title="Java Applet">Java Applet</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000068186-osgi.html" title="OSGi">OSGi</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000082429-citrix.html" title="Citrix">Citrix</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074822.html" title="Chromium"> Chromium <span class='item-count'>13</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000041956-chromium-version.html" title="Chromium Version">Chromium Version</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013080-chromium-switches.html" title="Chromium Switches">Chromium Switches</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013081-chromium-language.html" title="Chromium Language">Chromium Language</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000015146-chromium-binaries.html" title="Chromium Binaries">Chromium Binaries</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000112428-chromium-extensions.html" title="Chromium Extensions">Chromium Extensions</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000105492-chromium-updates-calendar.html" title="Chromium Updates Calendar">Chromium Updates Calendar</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013082-remote-debugging-port.html" title="Remote Debugging Port">Remote Debugging Port</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000097285-chromium-api-keys.html" title="Chromium API Keys">Chromium API Keys</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013085-geolocation.html" title="Geolocation">Geolocation</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000099117-voice-recognition.html" title="Voice Recognition">Voice Recognition</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000033244-open-source-components-licenses.html" title="Open Source Components&#x27; Licenses">Open Source Components&#x27; Licenses</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000139123-sandbox.html" title="Sandbox">Sandbox</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000149569-chromium-64-bit-on-windows.html" title="Chromium 64-bit on Windows">Chromium 64-bit on Windows</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000161856.html" title="Spell Checker"> Spell Checker <span class='item-count'>3</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000044250-configuring-spell-checker.html" title="Configuring Spell Checker">Configuring Spell Checker</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000079632-spell-check-events.html" title="Spell Check Events">Spell Check Events</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000044259-context-menu-suggestions-swing.html" title="Context Menu Suggestions Swing">Context Menu Suggestions Swing</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000074866.html" title="Debugging"> Debugging <span class='item-count'>4</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013125-logging.html" title="Logging">Logging</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000019057-debugging-on-mac.html" title="Debugging on Mac">Debugging on Mac</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000019058-debugging-on-windows.html" title="Debugging on Windows">Debugging on Windows</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000133947-debugging-on-linux.html" title="Debugging on Linux">Debugging on Linux</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000095975.html" title="Why JxBrowser"> Why JxBrowser <span class='item-count'>1</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000013137-jxbrowser-vs-javafx-webview.html" title="JxBrowser vs JavaFX WebView">JxBrowser vs JavaFX WebView</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000108024.html" title="Tips &amp; Tricks"> Tips &amp; Tricks <span class='item-count'>4</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000022587-runnig-jxbrowser-demo-locally.html" title="Runnig JxBrowser Demo Locally">Runnig JxBrowser Demo Locally</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000034230-disabling-swipe-navigation.html" title="Disabling Swipe Navigation">Disabling Swipe Navigation</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000091687-detecting-unresponsive-web-page.html" title="Detecting Unresponsive Web Page">Detecting Unresponsive Web Page</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000128668-starting-x-server-in-headless-linux.html" title="Starting X-server in Headless Linux">Starting X-server in Headless Linux</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000108557.html" title="Migration Guides"> Migration Guides <span class='item-count'>5</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000045849-migrating-from-4-x-to-5-0.html" title="Migrating from 4.x to 5.0">Migrating from 4.x to 5.0</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000022644-migrating-from-5-4-3-to-6-0.html" title="Migrating from 5.4.3 to 6.0">Migrating from 5.4.3 to 6.0</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000031463-migrating-from-6-0-2-to-6-1.html" title="Migrating from 6.0.2 to 6.1">Migrating from 6.0.2 to 6.1</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000044779-migrating-from-6-1-1-to-6-2.html" title="Migrating from 6.1.1 to 6.2">Migrating from 6.1.1 to 6.2</a>
+                              </div>
+                          </li>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000059164-migrating-from-6-2-to-6-3.html" title="Migrating from 6.2 to 6.3">Migrating from 6.2 to 6.3</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+              
+                  <section class="cs-g article-list">
+                      <div class="list-lead">
+                          <a href="folders/9000183017.html" title="FAQ"> FAQ <span class='item-count'>1</span></a>
+                      </div>
+                      <ul>
+                          
+                          <li>
+                              <div class="ellipsis">
+                                  <a href="articles/9000138417--ipc-process-exited-exit-code-127-on-linux.html" title="&#x27;IPC process exited. Exit code: 127&#x27; on Linux">&#x27;IPC process exited. Exit code: 127&#x27; on Linux</a>
+                              </div>
+                          </li>
+                          
+                      </ul>
+                      
+                  </section>
+              
+          
+      </div>
+  </section>
+</section>
+	</div>
+
+</div>
+
+
+	<!--<footer class="footer rounded-6">
+	<nav class="footer-links">
+		
+				
+					<a href="/support/home" class="">Home</a>
+				
+					<a href="/support/solutions" class="active">Solutions</a>
+				
+					<a href="/support/discussions" class="">Forums</a>
+				
+		
+		
+		
+	</nav>
+</footer>
+-->
+
+<div class="copyright">&copy; 2007 – 2020 
+<a href="http://www.teamdev.com/" target="_blank">TeamDev.</a>
+				  All rights reserved.
+</div>
+
+
+
+
+			<script src="https://assets4.freshdesk.com/assets/cdn/portal_bottom-79245b6b714e53fa8ed9a0db1a95e76f.js" type="text/javascript"></script>
+		<script src="../../../assets10.freshdesk.com/assets/cdn/redactor-7e802312e7db6fddcb8a4f8423a2cb6c.js" type="text/javascript"></script>
+		<script src="https://assets3.freshdesk.com/assets/cdn/freshfone_portal-38510e9dcd7cf1e2bce25e2201e23cef.js" type="text/javascript"></script>	
+		<script src="https://assets6.freshdesk.com/assets/cdn/lang/en-d58d68912364ea68a01bde932774f9dd.js" type="text/javascript"></script>
+		<!-- for i18n-js translations -->
+  		<script src="https://assets4.freshdesk.com/assets/cdn/i18n/portal/en-e757d3b3f03360ef6d1c7cf4264cdbb4.js" type="text/javascript"></script>
+		<!-- Including default portal based script at the bottom -->
+		<script type="text/javascript">
+//<![CDATA[
+	
+	jQuery(document).ready(function() {
+					
+		// Setting the locale for moment js
+		moment.lang('en');
+
+		var validation_meassages = {"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date ( ISO ).","number":"Please enter a valid number.","digits":"Please enter only digits.","creditcard":"Please enter a valid credit card number.","equalTo":"Please enter the same value again.","two_decimal_place_warning":"Value cannot have more than 2 decimal digits","select_atleast_one":"Select at least one option.","select2_minimum_limit":"Please type %{char_count} or more letters","select2_maximum_limit":"You can only select %{limit} %{container}","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","select2_maximum_limit_jq":"You can only select {0} {1}","facebook_limit_exceed":"Your Facebook reply was over 8000 characters. You'll have to be more clever.","messenger_limit_exceeded":"Oops! You have exceeded Messenger Platform's character limit. Please modify your response.","not_equal_to":"This element should not be equal to","email_address_invalid":"One or more email addresses are invalid.","twitter_limit_exceed":"Oops! You have exceeded Twitter's character limit. You'll have to modify your response.","password_does_not_match":"The passwords don't match. Please try again.","valid_hours":"Please enter a valid hours.","reply_limit_exceed":"Your reply was over 2000 characters. You'll have to be more clever.","url_format":"Invalid URL format","url_without_slash":"Please enter a valid URL without '/'","link_back_url":"Please enter a valid linkback URL","requester_validation":"Please enter a valid requester details or <a href=\"#\" id=\"add_requester_btn_proxy\">add new requester.</a>","agent_validation":"Please enter valid agent details","email_or_phone":"Please enter a Email or Phone Number","upload_mb_limit":"Upload exceeds the available 15MB limit","invalid_image":"Invalid image format","atleast_one_role":"At least one role is required for the agent","invalid_time":"Invalid time.","remote_fail":"Remote validation failed","trim_spaces":"Auto trim of leading & trailing whitespace","hex_color_invalid":"Please enter a valid hex color value.","name_duplication":"The name already exists.","invalid_value":"Invalid value","invalid_regex":"Invalid Regular Expression","same_folder":"Cannot move to the same folder.","maxlength_255":"Please enter less than 255 characters","decimal_digit_valid":"Value cannot have more than 2 decimal digits","atleast_one_field":"Please fill at least {0} of these fields.","atleast_one_portal":"Select atleast one portal.","custom_header":"Please type custom header in the format -  header : value","same_password":"Should be same as Password","select2_no_match":"No matching %{container} found","integration_no_match":"no matching data...","time":"Please enter a valid time","valid_contact":"Please add a valid contact","field_invalid":"This field is invalid"}	
+
+		jQuery.extend(jQuery.validator.messages, validation_meassages );
+
+
+		jQuery(".call_duration").each(function () {
+			var format,time;
+			if (jQuery(this).data("time") === undefined) { return; }
+			if(jQuery(this).hasClass('freshcaller')){ return; }
+			time = jQuery(this).data("time");
+			if (time>=3600) {
+			 format = "hh:mm:ss";
+			} else {
+				format = "mm:ss";
+			}
+			jQuery(this).html(time.toTime(format));
+		});
+	});
+
+	// Shortcuts variables
+	var Shortcuts = {"global":{"help":"?","save":"mod+return","cancel":"esc","search":"/","status_dialog":"mod+alt+return","save_cuctomization":"mod+shift+s"},"app_nav":{"dashboard":"g d","tickets":"g t","social":"g e","solutions":"g s","forums":"g f","customers":"g c","reports":"g r","admin":"g a","ticket_new":"g n","compose_email":"g m"},"pagination":{"previous":"alt+left","next":"alt+right","alt_previous":"j","alt_next":"k"},"ticket_list":{"ticket_show":"return","select":"x","select_all":"shift+x","search_view":"v","show_description":"space","unwatch":"w","delete":"#","pickup":"@","spam":"!","close":"~","silent_close":"alt+shift+`","undo":"z","reply":"r","forward":"f","add_note":"n","scenario":"s"},"ticket_detail":{"toggle_watcher":"w","reply":"r","forward":"f","add_note":"n","close":"~","silent_close":"alt+shift+`","add_time":"m","spam":"!","delete":"#","show_activities_toggle":"}","properties":"p","expand":"]","undo":"z","select_watcher":"shift+w","go_to_next":["j","down"],"go_to_previous":["k","up"],"scenario":"s","pickup":"@","collaboration":"d"},"social_stream":{"search":"s","go_to_next":["j","down"],"go_to_previous":["k","up"],"open_stream":["space","return"],"close":"esc","reply":"r","retweet":"shift+r"},"portal_customizations":{"preview":"mod+shift+p"},"discussions":{"toggle_following":"w","add_follower":"shift+w","reply_topic":"r"}};
+	
+	// Date formats
+	var DATE_FORMATS = {"non_us":{"moment_date_with_week":"ddd, D MMM, YYYY","datepicker":"d M, yy","datepicker_escaped":"d M yy","datepicker_full_date":"D, d M, yy","mediumDate":"d MMM, yyyy"},"us":{"moment_date_with_week":"ddd, MMM D, YYYY","datepicker":"M d, yy","datepicker_escaped":"M d yy","datepicker_full_date":"D, M d, yy","mediumDate":"MMM d, yyyy"}};
+
+	var lang = { 
+		loadingText: "Please Wait...",
+		viewAllTickets: "View all tickets"
+	};
+
+
+//]]>
+</script> 
+
+		
+
+		
+		
+		<script type="text/javascript">
+     		I18n.defaultLocale = "en";
+     		I18n.locale = "en";
+		</script>
+		
+	</body>
+
+<!-- Mirrored from jxbrowser.support.teamdev.com/support/solutions/9000049010 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Sep 2020 07:30:47 GMT -->
+</html>
