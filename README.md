@@ -3,7 +3,7 @@
 JxBrowser是一个不免费的优秀项目。本项目没有包含许可证信息，意味着你导入到eclipse后并不能直接运行。请自行获取许可证。  
 JxBrowser官网：https://www.teamdev.com/jxbrowser  
 请支持正版，支持他人劳动成果！  
-建议先去本项目目录 app\helpdoc，用浏览器打开index.html 查阅帮助文档  
+建议先去本项目目录 app\helpdoc，用浏览器打开index.html 查阅帮助文档，或者查阅线上文档：http://xuanyimao.com/softarticle/jxbrowser.html  
 
 ## 目录说明
 src：JAVA代码目录  
